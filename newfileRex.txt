@@ -1,0 +1,3 @@
+git add fav_rest.txt
+git commit -m "Chipotle, Mcdonalds, Applebees"
+git push origin Rex-Fischer
