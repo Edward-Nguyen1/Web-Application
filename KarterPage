@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Number 2 Name</title>
+</head>
+<body>
+    <!-- Navigation Panel -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="member2.html">Member 1</a></li>
+       
+        </ul>
+    </nav>
+
+    <!-- Member Details -->
+    <section>
+        <h2>Member Name</h2>
+        <img src="Headshot.jpg" alt="Headshot of Member" style="width:100px; height:100px;">
+        <p> Hello, my name is Karter ___.
+            I am currently ___ years old, I ____.</p>
+    </section>
+</body>
+</html>
