@@ -328,6 +328,62 @@ footer {
     }
 }
 
+/* Member Card Section */
+.member-card {
+    max-width: 600px; /* Limit the width for readability */
+    margin: 20px auto; /* Center the card on the page */
+    background: white; /* Background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.member-card h2 {
+    font-size: 1.8rem; /* Larger title */
+    color: #4CAF50; /* Match your theme color */
+    margin-bottom: 20px;
+}
+
+.member-info {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center the image and text vertically */
+    justify-content: center; /* Center everything */
+    gap: 20px; /* Add space between image and text */
+}
+
+.member-info img {
+    width: 120px; /* Set image size */
+    height: 120px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image fits the frame */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.member-info .text {
+    text-align: left; /* Align text to the left */
+    font-size: 1.1rem; /* Slightly larger font */
+    color: #333;
+    line-height: 1.6; /* Improve readability */
+}
+
+.member-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+    .member-info {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center align on smaller screens */
+    }
+
+    .member-info img {
+        margin-bottom: 15px; /* Add space below the image */
+    }
+}
 
 
 
