@@ -232,3 +232,102 @@ button:hover {
     }
 }
 
+header {
+    background: linear-gradient(90deg, #4CAF50, #81C784); /* Gradient effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px 0;
+}
+
+nav a {
+    color: #ffffff; /* White text for links */
+    font-weight: bold;
+    text-transform: uppercase; /* Make text uppercase */
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+nav a:hover {
+    background-color: #ffffff; /* Add background color on hover */
+    color: #4CAF50; /* Change text color on hover */
+    border-radius: 5px; /* Round the edges */
+}
+#home {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeInUp 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End in original position */
+    }
+}
+<nav>
+    <ul>
+        <li><a href="#home"><img src="home-icon.png" alt="Home" style="width: 16px;"> Home</a></li>
+        <li><a href="#about"><img src="about-icon.png" alt="About" style="width: 16px;"> About</a></li>
+        <li><a href="#member1"><img src="member-icon.png" alt="Member 1" style="width: 16px;"> Member 1</a></li>
+        <li><a href="#member2"><img src="member-icon.png" alt="Member 2" style="width: 16px;"> Member 2</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Our Team Page</h2>
+    <p>We are a group of talented individuals currently enrolled in CIS 122 Data Structures Section 6.</p>
+    <p>Please feel free to contact us under the "About" section on the very top!</p>
+    <button>Learn More</button>
+</section>
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388E3C; /* Darker green on hover */
+}
+
+<footer>
+    <p>&copy; 2024 Our Team. Built with ❤️ by CIS 122 Students.</p>
+</footer>
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow at top */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        align-items: center;
+    }
+
+    #home {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+
+
+
