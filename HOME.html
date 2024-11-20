@@ -3,31 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOMEPAGE</title>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 2rem;
+            padding: 2rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section img {
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Panel -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Home.html">ABOUT</a></li>
-       
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
     <!-- Member Details -->
     <section>
-        <h2>CONTACT US</h2>
+        <h2>Contact Us</h2>
         <img src="Headshot.jpg" alt="Headshot of Member" style="width:100px; height:100px;">
-        <p>Team Name: Table 1 <p>
-        <p>Team Description: 4 finger ball</p>
-
-        <p>Team Contact: Information: edward.nguyen@mnsu.edu </p>
-        <p>Team Contact: Information: karter.riesgraf@mnsu.edu </p>
-        <p>Team Contact: Information: mason.vue@my.century.edu </p>
-        <p>Team Contact: Information: rex.fischer@mnsu.edu </p>
-
-
+        <p><strong>Team Name:</strong> Table 1</p>
+        <p><strong>Team Description:</strong> 4 finger ball</p>
+        <p><strong>Team Contact:</strong></p>
+        <ul>
+            <li>Edward Nguyen - <a href="mailto:edward.nguyen@mnsu.edu">edward.nguyen@mnsu.edu</a></li>
+            <li>Karter Riesgraf - <a href="mailto:karter.riesgraf@mnsu.edu">karter.riesgraf@mnsu.edu</a></li>
+            <li>Mason Vue - <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></li>
+            <li>Rex Fischer - <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></li>
+        </ul>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Team Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
