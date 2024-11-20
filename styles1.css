@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #343a40;
+    padding: 1rem 2rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #f8d210;
+}
+
+/* Section Styles */
+section {
+    margin: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+section img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #f8d210;
+}
+section p {
+    margin: 0.5rem 0;
+}
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+section ul li {
+    margin: 0.5rem 0;
+}
+section ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
