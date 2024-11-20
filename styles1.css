@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -11,6 +11,7 @@ body {
 nav {
     background-color: #343a40;
     padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 nav ul {
     list-style-type: none;
@@ -28,8 +29,10 @@ nav ul li a {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: #f8d210;
+    text-decoration: underline;
 }
 
 /* Section Styles */
@@ -42,28 +45,50 @@ section {
 }
 section h2 {
     color: #343a40;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
-section img {
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 250px;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
     border-radius: 50%;
+    width: 100px;
+    height: 100px;
     margin-bottom: 1rem;
     border: 3px solid #f8d210;
 }
-section p {
+.card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #343a40;
+}
+.card p {
+    font-size: 0.9rem;
     margin: 0.5rem 0;
 }
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-section ul li {
-    margin: 0.5rem 0;
-}
-section ul li a {
+.card a {
     color: #007bff;
     text-decoration: none;
+    font-weight: bold;
 }
-section ul li a:hover {
+.card a:hover {
     text-decoration: underline;
 }
 
@@ -73,7 +98,6 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 2rem;
 }
+
