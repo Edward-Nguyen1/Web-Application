@@ -385,5 +385,29 @@ footer {
     }
 }
 
+/* Member Card Section */
+.member-card {
+    max-width: 500px; /* Limit the card's width */
+    margin: 30px auto; /* Center the card on the page */
+    background: #ffffff; /* White background for the card */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent content from spilling out */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effect */
+}
+
+.member-card h2 {
+    font-size: 1.6rem; /* Slightly larger font */
+    color: #4CAF50; /* Use the theme's green color */
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the title */
+}
+
+.member-info {
+    display: flex; /* Align image and text horizontally */
+    align-items: center; /* Center the image and text vertically */
+    gap: 20px; /* Add space between image and text
+
 
 
