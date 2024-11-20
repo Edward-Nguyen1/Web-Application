@@ -3,43 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Homepage</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-      <link rel="stylesheet" href="styles1.css">
-
-
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo -->
-    <header>
-        <img src="Logo1.png" style="float:left; width:80px; height:80px;">
-        <h1>Our Team</h1>
-    </header>
-    
     <!-- Navigation Panel -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="HOME.html">About</a></li>
-            <li><a href="EddieN.html">Member 1</a></li>
-            <li><a href="KarterR.html">Member 2</a></li>
-            <li><a href="MasonV.html">Member 3</a></li>
-            <li><a href="RexF.html">Member 4</a></li>
-
-
-            <!-- Add more members as needed -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
     </nav>
 
-    <!-- Homepage Content -->
+    <!-- Member Details -->
     <section>
-        <h2>Welcome to Our Team Page</h2>
-        <p>We are a group of talented individuals, who are currently enrolled in CIS 122 Data Structures Section 6</p>
-        <p>Please feel free to contact us under the "About" section on the very top!</p>
-        
-        <p>Cananic combo, no coleslaw, sub with toast</p>
-
+        <h2>Contact Us</h2>
+        <div class="section-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="Headshot.jpg" alt="Edward Nguyen">
+                <h3>Edward Nguyen</h3>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Email:</strong> <a href="mailto:edward.nguyen@mnsu.edu">edward.nguyen@mnsu.edu</a></p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="Headshot.jpg" alt="Karter Riesgraf">
+                <h3>Karter Riesgraf</h3>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Email:</strong> <a href="mailto:karter.riesgraf@mnsu.edu">karter.riesgraf@mnsu.edu</a></p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="Headshot.jpg" alt="Mason Vue">
+                <h3>Mason Vue</h3>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Email:</strong> <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></p>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="Headshot.jpg" alt="Rex Fischer">
+                <h3>Rex Fischer</h3>
+                <p><strong>Role:</strong> Team Member</p>
+                <p><strong>Email:</strong> <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></p>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Team Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
