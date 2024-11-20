@@ -8,6 +8,63 @@ body {
     color: #333;
 }
 
+nav ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+nav ul {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the navigation */
+    gap: 20px; /* Add spacing between links */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align the content */
+    gap: 20px; /* Add space between the logo and text */
+}
+
+header img {
+    width: 100px; /* Ensure consistent logo size */
+    border-radius: 50%;
+}
+header {
+    background: #4CAF50; /* Keep the green color */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+h2 {
+    font-size: 2rem; /* Increase font size */
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem; /* Increase paragraph font size */
+    line-height: 1.8;
+    color: #555;
+}
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    width: 80%; /* Constrain content width */
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    section {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}
+
+
 /* Header Styles */
 header {
     background: #4CAF50;
