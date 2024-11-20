@@ -1,22 +1,46 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(135deg, #f4f4f9, #e0e0e0); /* Gradient background */
     color: #333;
 }
 
+/* Header Styles */
 header {
     background: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
 }
 
+header img {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Navigation Bar */
 nav {
     text-align: center;
     margin: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav a {
@@ -24,20 +48,79 @@ nav a {
     text-decoration: none;
     color: #4CAF50;
     font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth hover effect */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #2E7D32;
+    border-bottom: 2px solid #2E7D32;
 }
 
+/* Container Styles */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 20px auto;
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+/* Welcome Section */
+#home {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.member {
+    text-align: center;
+    width: 200px; /* Fixed width for members */
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Member card shadow */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s; /* Add zoom effect */
+}
+
+.member img:hover {
+    transform: scale(1.1); /* Zoom in */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.member p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     background: #333;
@@ -46,4 +129,49 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 14px;
 }
+
+/* Button Styles */
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #2E7D32; /* Darker green for hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px;
+    }
+
+    .team {
+        flex-direction: column; /* Stack members vertically */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding */
+    }
+}
+
