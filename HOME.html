@@ -10,10 +10,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0fff0; /* Light green background */
+            background-color: #f4f4f4;
         }
         nav {
-            background-color: #228B22; /* Forest green */
+            background-color: #333;
             color: white;
             padding: 1rem 2rem;
         }
@@ -39,15 +39,49 @@
             padding: 2rem;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid #228B22; /* Green border */
         }
         section img {
             border-radius: 50%;
             margin-bottom: 1rem;
-            border: 3px solid #228B22; /* Green border around image */
         }
         footer {
-            background-color: #228B22; /* Forest green */
+            background-color: #333;
             color: white;
             text-align: center;
-         
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Panel -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Member Details -->
+    <section>
+        <h2>Contact Us</h2>
+        <img src="Headshot.jpg" alt="Headshot of Member" style="width:100px; height:100px;">
+        <p><strong>Team Name:</strong> Table 1</p>
+        <p><strong>Team Description:</strong> 4 finger ball</p>
+        <p><strong>Team Contact:</strong></p>
+        <ul>
+            <li>Edward Nguyen - <a href="mailto:edward.nguyen@mnsu.edu">edward.nguyen@mnsu.edu</a></li>
+            <li>Karter Riesgraf - <a href="mailto:karter.riesgraf@mnsu.edu">karter.riesgraf@mnsu.edu</a></li>
+            <li>Mason Vue - <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></li>
+            <li>Rex Fischer - <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Team Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
