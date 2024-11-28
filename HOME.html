@@ -22,7 +22,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
         }
         nav ul li {
             margin-right: 20px;
@@ -30,9 +30,11 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
         }
         nav ul li a:hover {
-            text-decoration: underline;
+            background-color: #555;
         }
         section {
             margin: 2rem;
@@ -60,21 +62,25 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="#member1">Edward Nguyen</a></li>
+            <li><a href="#member2">Karter Riesgraf</a></li>
+            <li><a href="#member3">Mason Vue</a></li>
+            <li><a href="#member4">Rex Fischer</a></li>
         </ul>
     </nav>
 
     <!-- Member Details -->
     <section>
         <h2>Contact Us</h2>
-        <img src="Logo2.png" alt="Headshot of Member" style="width:75px; height:75px;">
+        <img src="Logo2.png" alt="Team Logo" style="width:75px; height:75px;">
         <p><strong>Team Name:</strong> Table 1</p>
         <p><strong>Team Description:</strong> 4 finger ball</p>
         <p><strong>Team Contact:</strong></p>
         <ul>
-            <li>Edward Nguyen - <a href="mailto:edward.nguyen@mnsu.edu">edward.nguyen@mnsu.edu</a></li>
-            <li>Karter Riesgraf - <a href="mailto:karter.riesgraf@mnsu.edu">karter.riesgraf@mnsu.edu</a></li>
-            <li>Mason Vue - <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></li>
-            <li>Rex Fischer - <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></li>
+            <li id="member1">Edward Nguyen - <a href="mailto:edward.nguyen@mnsu.edu">edward.nguyen@mnsu.edu</a></li>
+            <li id="member2">Karter Riesgraf - <a href="mailto:karter.riesgraf@mnsu.edu">karter.riesgraf@mnsu.edu</a></li>
+            <li id="member3">Mason Vue - <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></li>
+            <li id="member4">Rex Fischer - <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></li>
         </ul>
     </section>
 
@@ -84,3 +90,4 @@
     </footer>
 </body>
 </html>
+
