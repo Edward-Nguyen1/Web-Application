@@ -3,57 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Team Homepage</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #333;
         }
+
         nav {
             background-color: #333;
-            color: white;
-            padding: 1rem 2rem;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
+
         nav ul {
-            list-style-type: none;
+            list-style: none;
+            display: flex;
+            gap: 20px;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: space-between;
         }
+
         nav ul li {
-            margin-right: 20px;
+            display: inline;
         }
+
         nav ul li a {
-            color: white;
             text-decoration: none;
-            padding: 0.5rem 1rem;
+            color: white;
+            padding: 10px 20px;
             border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
         }
+
         nav ul li a:hover {
             background-color: #555;
+            transform: scale(1.1);
         }
+
         section {
-            margin: 2rem;
-            padding: 2rem;
             background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
-        section img {
+
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        img {
             border-radius: 50%;
+            border: 4px solid #fad0c4;
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             margin-bottom: 1rem;
         }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: #00f2fe;
+        }
+
         footer {
+            text-align: center;
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
+            padding: 1rem;
+            position: relative;
             bottom: 0;
             width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Button Styling */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            background-color: #4facfe;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button-container a:hover {
+            background-color: #00f2fe;
+            transform: scale(1.1);
         }
     </style>
 </head>
@@ -62,7 +145,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="EddieN.html">Edward Nguyen</a></li> 
+            <li><a href="EddieN.html">Edward Nguyen</a></li>
             <li><a href="KarterR.html">Karter Riesgraf</a></li>
             <li><a href="MasonV.html">Mason Vue</a></li>
             <li><a href="RexF.html">Rex Fischer</a></li>
@@ -72,7 +155,7 @@
     <!-- Member Details -->
     <section>
         <h2>Contact Us</h2>
-        <img src="Logo2.png" alt="Team Logo" style="width:75px; height:75px;">
+        <img src="Logo2.png" alt="Team Logo">
         <p><strong>Team Name:</strong> Table 1</p>
         <p><strong>Team Description:</strong> 4 finger ball</p>
         <p><strong>Team Contact:</strong></p>
@@ -82,12 +165,14 @@
             <li id="member3">Mason Vue - <a href="mailto:mason.vue@my.century.edu">mason.vue@my.century.edu</a></li>
             <li id="member4">Rex Fischer - <a href="mailto:rex.fischer@mnsu.edu">rex.fischer@mnsu.edu</a></li>
         </ul>
+        <div class="button-container">
+            <a href="team_members.html">Meet the Team</a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Your Team Name. All rights reserved.</p>
+        <p>&copy; 2024 Table 1 | All rights reserved.</p>
     </footer>
 </body>
 </html>
-
