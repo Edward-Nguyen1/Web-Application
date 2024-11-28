@@ -3,7 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Number 3 Name</title>
+    <title>Mason Vue</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            transform: scale(1.1);
+        }
+
+        section {
+            background: white;
+            margin: 2rem auto;
+            padding: 2rem;
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 4px solid #fad0c4;
+            width: 120px;
+            height: 120px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 1rem 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Button Styling */
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            background-color: #fad0c4;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button-container a:hover {
+            background-color: #ff9a9e;
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Panel -->
@@ -11,16 +124,23 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="member3.html">Member 3</a></li>
-       
         </ul>
     </nav>
 
     <!-- Member Details -->
     <section>
-        <h2>Member Number 3</h2>
-        <img src="IMG_5066.jpeg" alt="Headshot of Member" style="width:100px; height:100px;">
-        <p> Hello, My name is Mason Vue
-            I am currently 19 and a sophmore in MIS </p>
+        <h2>Mason Vue</h2>
+        <img src="IMG_5066.jpeg" alt="Headshot of Mason" style="width:120px; height:120px;">
+        <p>Hello, my name is Mason Vue. I am currently 19 years old and a sophomore majoring in MIS.</p>
+        <div class="button-container">
+            <a href="mailto:mason.vue@my.century.edu">Contact Me</a>
+            <a href="index.html">Back to Homepage</a>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Table 1 | Created by Mason Vue</p>
+    </footer>
 </body>
 </html>
