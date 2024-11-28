@@ -10,16 +10,16 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+            background: linear-gradient(to right, #fbc2eb, #a6c1ee);
             color: #333;
         }
 
         nav {
             background-color: #333;
-            padding: 1rem 0;
+            padding: 1rem;
             display: flex;
             justify-content: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            align-items: center;
         }
 
         nav ul {
@@ -40,7 +40,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background 0.3s, transform 0.2s;
         }
 
         nav ul li a:hover {
@@ -60,18 +60,19 @@
 
         h2 {
             color: #333;
-            margin-bottom: 1rem;
+            text-align: center;
             text-transform: uppercase;
             font-size: 2rem;
         }
 
         img {
+            display: block;
+            margin: 1rem auto;
             border-radius: 50%;
-            border: 4px solid #fad0c4;
-            width: 120px;
-            height: 120px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            margin-bottom: 1rem;
+            border: 4px solid #fbc2eb;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         p {
@@ -79,6 +80,27 @@
             color: #555;
             margin: 1rem 0;
             line-height: 1.6;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            background-color: #a6c1ee;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button-container a:hover {
+            background-color: #fbc2eb;
+            transform: scale(1.1);
         }
 
         footer {
@@ -94,28 +116,6 @@
         footer p {
             margin: 0;
         }
-
-        /* Button Styling */
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .button-container a {
-            display: inline-block;
-            background-color: #fad0c4;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .button-container a:hover {
-            background-color: #ff9a9e;
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
@@ -123,14 +123,17 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="member3.html">Member 3</a></li>
+            <li><a href="EddieN.html">Edward Nguyen</a></li>
+            <li><a href="KarterR.html">Karter Riesgraf</a></li>
+            <li><a href="MasonV.html">Mason Vue</a></li>
+            <li><a href="RexF.html">Rex Fischer</a></li>
         </ul>
     </nav>
 
     <!-- Member Details -->
     <section>
         <h2>Mason Vue</h2>
-        <img src="IMG_5066.jpeg" alt="Headshot of Mason" style="width:120px; height:120px;">
+        <img src="IMG_5066.jpeg" alt="Headshot of Mason Vue">
         <p>Hello, my name is Mason Vue. I am currently 19 years old and a sophomore majoring in MIS.</p>
         <div class="button-container">
             <a href="mailto:mason.vue@my.century.edu">Contact Me</a>
